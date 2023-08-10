@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Spinnaker&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html{
+    font-family: 'Spinnaker', sans-serif;
+}
+
+/* Example badge styles */
+.badge {
+    display: inline-block;
+    padding: 0.25rem 0.5rem;
+    border-radius: 0.25rem;
+    font-size: 0.75rem;
+    font-weight: bold;
+}
+
+.badge-active {
+    background-color: #34D399; /* Green */
+    color: white;
+}
+
+.badge-inactive {
+    background-color: #F87171; /* Red */
+    color: white;
+}
