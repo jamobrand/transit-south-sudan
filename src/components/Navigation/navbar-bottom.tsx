@@ -15,6 +15,24 @@ const NavbarBottom: React.FC = () => {
                                 Home
                             </a>
                         </li>
+                        <li>
+                            <a
+                                href="/transit/validate-permit"
+                                className="text-gray-900 dark:text-white hover:text-blue-600"
+                                aria-current="page"
+                            >
+                                Validate Permit
+                            </a>
+                        </li>
+                        <li>
+                            <a
+                                href="/transit/manage-permit"
+                                className="text-gray-900 dark:text-white hover:text-blue-600"
+                                aria-current="page"
+                            >
+                                Manage Permit
+                            </a>
+                        </li>
                     </ul>
                 </div>
             </div>

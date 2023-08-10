@@ -2,7 +2,7 @@ import React from 'react'
 import { useNavigate } from 'react-router-dom';
 
 const PermitDetails: React.FC = () => {
-    const navigate = useNavigate()
+    const navigate = useNavigate();
 
     const handlePayment = () => {
         // Navigate to the subject prediction page
@@ -98,15 +98,22 @@ const PermitDetails: React.FC = () => {
                         <label htmlFor="vehicleType" className="block text-sm font-medium leading-6 text-gray-900">
                             Vehicle Type
                         </label>
-                        <div className="mt-1">
-                            <input
-                                type="text"
+                        <div className="mt-2">
+                            <select
                                 id="vehicleType"
                                 name="vehicleType"
                                 autoComplete="off"
                                 className="block w-full rounded-md border-gray-300 py-2 px-3 text-gray-900 focus:ring-indigo-500 focus:border-indigo-500 focus:ring focus:ring-opacity-50 sm:text-sm"
-                            />
+                            >
+                                <option>Select a vehicle type</option>
+                                <option>Tripper</option>
+                                <option>Canter</option>
+                                <option>Tanker</option>
+                                <option>Pickup</option>
+                                <option>Motorbike</option>
+                            </select>
                         </div>
+                      
                     </div>
 
                     <div className="sm:col-span-full">

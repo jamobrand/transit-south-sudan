@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import { useNavigate } from 'react-router-dom';
 
 enum Tab {
   CreditCard = 'creditCard',
@@ -7,7 +8,13 @@ enum Tab {
 }
 
 const Payment: React.FC = () => {
+  const navigate = useNavigate();
   const [activeTab, setActiveTab] = useState<Tab>(Tab.CreditCard);
+
+  const handlePermit = () => {
+    // Navigate to the subject prediction page
+    navigate("/transit/permit-complete");
+  };
 
   const renderTabContent = () => {
     switch (activeTab) {
@@ -81,7 +88,7 @@ const Payment: React.FC = () => {
             <div className="mt-6 gap-x-6">
               <button
                 role="button"
-                //onClick={handlePayment}
+                onClick={handlePermit}
                 className="w-full rounded-md bg-travelButton mb-4 px-3 py-3 text-sm font-medium text-white shadow-sm hover:bg-travelBlue focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
               >
                 Pay
@@ -128,7 +135,7 @@ const Payment: React.FC = () => {
             <div className="mt-6 gap-x-6">
               <button
                 role="button"
-                //onClick={handlePayment}
+                onClick={handlePermit}
                 className="w-full rounded-md bg-travelButton mb-4 px-3 py-3 text-sm font-medium text-white shadow-sm hover:bg-travelBlue focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
               >
                 Pay
@@ -163,7 +170,7 @@ const Payment: React.FC = () => {
             <div className="mt-6 gap-x-6">
               <button
                 role="button"
-                //onClick={handlePayment}
+                onClick={handlePermit}
                 className="w-full rounded-md bg-travelButton mb-4 px-3 py-3 text-sm font-medium text-white shadow-sm hover:bg-travelBlue focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
               >
                 Proceed to payment
