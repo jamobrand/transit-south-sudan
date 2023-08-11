@@ -10,14 +10,14 @@ const NavbarTop: React.FC = () => {
                         className="h-8 mr-3"
                         alt="South Sudan Country Logo"
                     />
-                    <span className="self-center text-2xl text-travelBlue font-semibold whitespace-nowrap dark:text-white">
+                    <span className="self-center text-base sm:text-2xl text-travelBlue font-semibold whitespace-nowrap dark:text-white">
                         Inter-County Border Transit Permit
                     </span>
                 </a>
-                <div className="flex items-center">
+                <div className="flex items-center space-x-4 mt-4 sm:mt-0">
                     {/* <a
                         href="tel:5541251234"
-                        className="mr-6 text-sm text-gray-500 dark:text-white hover:underline"
+                        className="text-sm text-gray-500 dark:text-white hover:underline"
                     >
                         (555) 412-1234
                     </a> */}

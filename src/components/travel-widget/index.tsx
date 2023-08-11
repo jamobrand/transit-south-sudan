@@ -354,7 +354,6 @@ const BookingForm: React.FC<{
         }, 3000);
     };
 
-    console.log(setOneWayDepartureDate, setRoundTripDepartureDate, setReturnDate)
     // Define options for leaving from and going to based on selected trip type and location
     const leavingFromOptions =
         selectedTripType === 'local'
@@ -364,7 +363,7 @@ const BookingForm: React.FC<{
     const goingToOptions = citiesTownsVillages; // Always show local city states or villages for Going To
 
     return (
-        <div className="mt-4 mb-5 flex space-x-4">
+        <div className="mt-4 mb-5 space-y-4 md:flex md:space-y-0 md:space-x-4">
             {isLoading && (
                 <div className="fixed inset-0 flex justify-center items-center bg-gray-800 bg-opacity-50 z-50">
                     <div className="animate-spin rounded-full h-16 w-16 border-t-4 border-blue-500"></div>
@@ -378,8 +377,8 @@ const BookingForm: React.FC<{
                 <option value="local">Local</option>
                 <option value="international">International</option>
             </select> */}
-            <select
-                className="sm:w-1/4 w-full border border-gray-300 rounded-lg p-2"
+           <select
+                className="w-full md:w-1/4 border border-gray-300 rounded-lg p-2"
                 defaultValue=""
             >
                 <option value="" disabled>
@@ -392,7 +391,7 @@ const BookingForm: React.FC<{
                 ))}
             </select>
             <select
-                className="sm:w-1/4 w-full border border-gray-300 rounded-lg p-2"
+                className="w-full md:w-1/4 border border-gray-300 rounded-lg p-2"
                 defaultValue=""
             >
                 <option value="" disabled>
@@ -406,7 +405,7 @@ const BookingForm: React.FC<{
             </select>
             <input
                 type="date"
-                className={`sm:w-1/6 w-full border border-gray-300 rounded-lg p-2`}
+                className={`w-full md:w-1/6 border border-gray-300 rounded-lg p-2`}
                 value={tripType === 'one-way' && oneWayDepartureDate ? oneWayDepartureDate.toISOString().slice(0, 10) : tripType === 'round-trip' && roundTripDepartureDate ? roundTripDepartureDate.toISOString().slice(0, 10) : ''}
                 min={today.toISOString().slice(0, 10)}
                 onChange={(e) => {
@@ -421,14 +420,14 @@ const BookingForm: React.FC<{
             {tripType === 'round-trip' && (
                 <input
                     type="date"
-                    className={`sm:w-1/6 w-full border border-gray-300 rounded-lg p-2`}
+                    className={`w-full md:w-1/6 border border-gray-300 rounded-lg p-2`}
                     value={returnDate ? returnDate.toISOString().slice(0, 10) : ''}
                     min={tripType === 'round-trip' && roundTripDepartureDate ? roundTripDepartureDate.toISOString().slice(0, 10) : today.toISOString().slice(0, 10)}
                     onChange={(e) => setReturnDate(new Date(e.target.value))}
                 />
             )}
             <button
-                className={`bg-blue-500 text-white py-2 px-4 rounded-lg ${(tripType === 'one-way' && !isDateValid(oneWayDepartureDate)) ||
+                className={`w-full md:w-auto bg-blue-500 text-white py-2 px-4 rounded-lg  ${(tripType === 'one-way' && !isDateValid(oneWayDepartureDate)) ||
                     (tripType === 'round-trip' && (
                         !isDateValid(roundTripDepartureDate) ||
                         (returnDate !== null && !isDateValid(returnDate))

@@ -1,4 +1,5 @@
 import React from 'react';
+import { NavLink } from 'react-router-dom';
 
 const NavbarBottom: React.FC = () => {
     return (
@@ -7,31 +8,29 @@ const NavbarBottom: React.FC = () => {
                 <div className="flex items-center">
                     <ul className="flex flex-row font-semibold mt-0 mr-6 space-x-8 text-sm">
                         <li>
-                            <a
-                                href="/"
-                                className="text-gray-900 dark:text-white hover:text-blue-600"
-                                aria-current="page"
+                            <NavLink
+                                to="/"
+                                className={({ isActive }) => (isActive ? "text-blue-600" : "text-gray-900 dark:text-white")}
+                            //className="text-gray-900 dark:text-white hover:text-blue-600"
                             >
                                 Home
-                            </a>
+                            </NavLink>
                         </li>
                         <li>
-                            <a
-                                href="/transit/validate-permit"
-                                className="text-gray-900 dark:text-white hover:text-blue-600"
-                                aria-current="page"
+                            <NavLink
+                                to="/transit/validate-permit"
+                                className={({ isActive }) => (isActive ? "text-blue-600" : "text-gray-900 dark:text-white")}
                             >
                                 Validate Permit
-                            </a>
+                            </NavLink>
                         </li>
                         <li>
-                            <a
-                                href="/transit/manage-permit"
-                                className="text-gray-900 dark:text-white hover:text-blue-600"
-                                aria-current="page"
+                            <NavLink
+                                to="/transit/manage-permit"
+                                className={({ isActive }) => (isActive ? "text-blue-600" : "text-gray-900 dark:text-white")}
                             >
                                 Manage Permit
-                            </a>
+                            </NavLink>
                         </li>
                     </ul>
                 </div>

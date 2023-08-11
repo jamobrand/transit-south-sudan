@@ -10,7 +10,7 @@ const PermitDetails: React.FC = () => {
     };
     return (
         <div className="flex min-h-full flex-1 flex-col justify-center px-6 py-7 lg:px-8">
-            <div className="mt-10 pt-20 sm:mx-auto sm:w-full sm:max-w-sm">
+            <div className="mt-10 pt-28 sm:pt-28 sm:mx-auto sm:w-full sm:max-w-sm">
                 <form className="space-y-6">
                 <div className="sm:col-span-full">
                         <label htmlFor="country" className="block text-sm font-medium leading-6 text-gray-900">

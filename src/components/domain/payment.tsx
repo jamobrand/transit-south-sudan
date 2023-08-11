@@ -184,7 +184,7 @@ const Payment: React.FC = () => {
   };
   return (
     <div className="flex min-h-full flex-1 flex-col justify-center px-6 py-7 lg:px-8">
-      <div className="mt-10 sm:mx-auto sm:w-full sm:max-w-sm">
+      <div className="mt-10 pt-28 sm:pt-24 sm:mx-auto sm:w-full sm:max-w-sm">
 
         <h2 className="text-base font-semibold leading-7 text-gray-900">Payment Details</h2>
         <p className="mt-1 text-sm leading-6 text-gray-600">

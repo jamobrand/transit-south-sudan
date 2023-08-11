@@ -28,7 +28,7 @@ const PermitComplete: React.FC = () => {
 
     return (
         <div className="flex min-h-full flex-1 flex-col justify-center px-6 py-7 lg:px-8">
-            <div className="mt-5 pt-20 sm:mx-auto sm:w-full sm:max-w-7xl">
+            <div className="mt-5 pt-32 sm:pt-24 sm:mx-auto sm:w-full sm:max-w-7xl">
 
                 <div className="relative overflow-x-auto shadow-md sm:rounded-lg">
                     {/* ... Your table header and search inputs ... */}

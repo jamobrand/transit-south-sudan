@@ -34,7 +34,7 @@ const ViewPermit: React.FC = () => {
     return (
         <div className="bg-white p-8 shadow-lg rounded-lg border">
 
-            <div className="flex justify-center items-center pt-20 mb-6">
+            <div className="flex justify-center items-center pt-32 sm:pt-24 mb-6">
                 <img
                     src="https://evisa.gov.ss/themes/ss-evisa/assets/img/DCRNPI.png"
                     alt="South Sudan Logo" className="h-24 w-24" />
@@ -44,31 +44,31 @@ const ViewPermit: React.FC = () => {
             <table className="flex justify-center items-center mb-4">
                 <tbody>
                     <tr>
-                        <td className="pl-36 pr-5 py-1 font-semibold">Permit Number:</td>
+                        <td className="sm:pl-36 sm:pr-5 sm:py-1 font-semibold">Permit Number:</td>
                         <td>TP123456</td>
                     </tr>
                     <tr>
-                        <td className="pl-36 pr-5 py-1 font-semibold">Valid from:</td>
+                        <td className="sm:pl-36 sm:pr-5 sm:py-1 font-semibold">Valid from:</td>
                         <td>2023-08-15 to 2023-08-31</td>
                     </tr>
                     <tr>
-                        <td className="pl-36 pr-5 py-1 font-semibold">Origin:</td>
+                        <td className="sm:pl-36 sm:pr-5 sm:py-1 font-semibold">Origin:</td>
                         <td>Juba</td>
                     </tr>
                     <tr>
-                        <td className="pl-36 pr-5 py-1 font-semibold">Destination:</td>
+                        <td className="sm:pl-36 sm:pr-5 sm:py-1 font-semibold">Destination:</td>
                         <td>Malakal</td>
                     </tr>
                     <tr>
-                        <td className="pl-36 pr-5 py-1 font-semibold">Issued to:</td>
+                        <td className="sm:pl-36 sm:pr-5 sm:py-1 font-semibold">Issued to:</td>
                         <td>David Anyang</td>
                     </tr>
                     <tr>
-                        <td className="pl-36 pr-5 py-1 font-semibold">Date Issued:</td>
+                        <td className="sm:pl-36 sm:pr-5 sm:py-1 font-semibold">Date Issued:</td>
                         <td>2023-08-10</td>
                     </tr>
                     <tr>
-                        <td className="pl-36 pr-5 py-1 font-semibold">Validity:</td>
+                        <td className="sm:pl-36 sm:pr-5 sm:py-1 font-semibold">Validity:</td>
                         <td>30 days</td>
                     </tr>
                 </tbody>

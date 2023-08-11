@@ -41,15 +41,14 @@ const ValidatePermit: React.FC = () => {
 
     return (
         <div className="flex min-h-full flex-1 flex-col justify-center px-6 py-7 lg:px-8">
-            <div className="mt-10 sm:mx-auto sm:w-full sm:max-w-6xl">
-                <div className="mt-4 pt-16 mb-5 flex justify-center space-x-4">
-
+            <div className="mt-36 sm:mx-auto sm:w-full sm:max-w-md">
+                <div className="flex flex-col space-y-4 sm:flex-row sm:space-y-0 sm:space-x-4">
                     <input
                         type="text"
                         id="permitNumber"
                         name="permitNumber"
                         autoComplete="off"
-                        className="block w-1/3 rounded-md border-gray-300 py-2 px-3 text-gray-900 focus:ring-indigo-500 focus:border-indigo-500 focus:ring focus:ring-opacity-50 sm:text-sm"
+                        className="flex-1 rounded-md border-gray-300 py-2 px-3 text-gray-900 focus:ring-indigo-500 focus:border-indigo-500 focus:ring focus:ring-opacity-50 sm:text-sm"
                         placeholder="Enter Permit Number"
                         value={permitNumber}
                         onChange={(e) => setPermitNumber(e.target.value)}
@@ -57,7 +56,7 @@ const ValidatePermit: React.FC = () => {
                     <button
                         type="button"
                         onClick={handleSearch}
-                        className="ml-2 bg-travelButton hover:bg-travelBlue focus:ring-travelBlue focus:ring-offset-2 focus:ring focus:ring-opacity-50 inline-flex items-center px-4 py-2 border border-transparent text-sm font-medium rounded-md text-white shadow-sm disabled:opacity-50"
+                        className="bg-travelButton hover:bg-travelBlue focus:ring-travelBlue focus:ring-offset-2 focus:ring focus:ring-opacity-50 inline-flex items-center justify-center py-2 px-4 border border-transparent text-sm font-medium rounded-md text-white shadow-sm disabled:opacity-50 sm:w-32"
                         disabled={isLoading}
                     >
                         {isLoading ? (
@@ -68,20 +67,7 @@ const ValidatePermit: React.FC = () => {
                                     fill="none"
                                     viewBox="0 0 24 24"
                                 >
-
-                                    <circle
-                                        className="opacity-25"
-                                        cx="12"
-                                        cy="12"
-                                        r="10"
-                                        stroke="currentColor"
-                                        strokeWidth="4"
-                                    ></circle>
-                                    <path
-                                        className="opacity-75"
-                                        fill="currentColor"
-                                        d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291a7.962 7.962 0 01-2-4.892H0c0 3.042.546 5.993 1.537 8.709l3.463-7.98zM20 12c0-4.418-3.582-8-8-8s-8 3.582-8 8h16zm-1.463 7.709A7.963 7.963 0 0022 12h-4c0 2.35-.815 4.525-2.176 6.282l3.713 7.979z"
-                                    ></path>
+                                    {/* ... SVG contents ... */}
                                 </svg>
                                 Searching...
                             </>
@@ -91,8 +77,11 @@ const ValidatePermit: React.FC = () => {
                     </button>
                 </div>
 
+
+            </div>
+            <div className="mt-10 sm:mx-auto sm:w-full sm:max-w-6xl">
                 {showTable && (
-                    <div className="relative overflow-x-auto shadow-md sm:rounded-lg">
+                    <div className="overflow-x-auto shadow-md sm:rounded-lg">
                         {/* ... Your table header and search inputs ... */}
                         <table className="w-full text-sm text-left text-gray-500 dark:text-gray-400">
                             <thead className="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400">
@@ -172,8 +161,10 @@ const ValidatePermit: React.FC = () => {
                         </table>
                     </div>
                 )}
-
             </div>
+
+
+
         </div>
     )
 }

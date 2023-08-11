@@ -17,7 +17,7 @@ const Hero: React.FC = () => {
                         </div>
                         <div className="mt-10 flex items-center justify-center gap-x-6 lg:justify-start">
                             <a
-                                href="https://accounts.eservices.gov.ss/register/visitor"
+                                href="/transit/register"
                                 className="rounded-md bg-travelBlue px-3.5 py-2.5 text-sm font-medium text-white shadow-sm hover:bg-travelBlueTwo focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white"
                             >
                                 Apply Permit
