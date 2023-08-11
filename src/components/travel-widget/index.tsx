@@ -121,7 +121,7 @@ const TravelWidget: React.FC = () => {
 
 
     return (
-        
+
         <div className="flex justify-center mb-9">
             <div className="w-full -mt-32 max-w-5xl bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
                 <div className="flex font-semibold justify-center relative border-b border-gray-200 mb-4 space-x-4">
@@ -377,7 +377,7 @@ const BookingForm: React.FC<{
                 <option value="local">Local</option>
                 <option value="international">International</option>
             </select> */}
-           <select
+            <select
                 className="w-full md:w-1/4 border border-gray-300 rounded-lg p-2"
                 defaultValue=""
             >
@@ -403,6 +403,13 @@ const BookingForm: React.FC<{
                     </option>
                 ))}
             </select>
+
+
+            <label htmlFor="departureDate" className="block mb-1 font-bold md:hidden">
+                Date of Transit
+            </label>
+
+
             <input
                 type="date"
                 className={`w-full md:w-1/6 border border-gray-300 rounded-lg p-2`}
@@ -418,6 +425,10 @@ const BookingForm: React.FC<{
                 }}
             />
             {tripType === 'round-trip' && (
+                <>
+                <label htmlFor="departureDate" className="block mb-1 font-bold md:hidden">
+                End of Transit
+            </label>
                 <input
                     type="date"
                     className={`w-full md:w-1/6 border border-gray-300 rounded-lg p-2`}
@@ -425,6 +436,7 @@ const BookingForm: React.FC<{
                     min={tripType === 'round-trip' && roundTripDepartureDate ? roundTripDepartureDate.toISOString().slice(0, 10) : today.toISOString().slice(0, 10)}
                     onChange={(e) => setReturnDate(new Date(e.target.value))}
                 />
+                </>
             )}
             <button
                 className={`w-full md:w-auto bg-blue-500 text-white py-2 px-4 rounded-lg  ${(tripType === 'one-way' && !isDateValid(oneWayDepartureDate)) ||
