@@ -20,11 +20,11 @@ const Hero: React.FC = () => {
                                 href="https://accounts.eservices.gov.ss/register/visitor"
                                 className="rounded-md bg-travelBlue px-3.5 py-2.5 text-sm font-medium text-white shadow-sm hover:bg-travelBlueTwo focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white"
                             >
-                                Create Account
+                                Apply Permit
                             </a>
-                            <a href="https://accounts.eservices.gov.ss/login" className="text-sm font-semibold leading-6 text-travelBlue">
+                            {/* <a href="https://accounts.eservices.gov.ss/login" className="text-sm font-semibold leading-6 text-travelBlue">
                                 Sign In <span aria-hidden="true">→</span>
-                            </a>
+                            </a> */}
                         </div>
                     </div>
                     <img

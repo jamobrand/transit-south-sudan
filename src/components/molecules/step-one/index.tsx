@@ -1,4 +1,5 @@
 import React from 'react';
+import StepImage from "../../../assets/TRAVEL.png"
 
 const StepOne: React.FC = () => {
     return (
@@ -16,7 +17,7 @@ const StepOne: React.FC = () => {
                         </div>
                     </div>
                     <img
-                        src="https://images.unsplash.com/photo-1601342550031-d6df73676153?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80"
+                        src={StepImage}
                         alt="Exam Prediction CentyPlus"
                         className="w-full max-w-none rounded-xl shadow-xl ring-1 ring-gray-400/10"
                     />

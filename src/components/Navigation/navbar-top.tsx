@@ -21,12 +21,12 @@ const NavbarTop: React.FC = () => {
                     >
                         (555) 412-1234
                     </a> */}
-                    {/* <a
+                    <a
                         href="https://accounts.eservices.gov.ss/login"
                         className="text-sm font-semibold text-blue-600 dark:text-blue-500 hover:underline"
                     >
-                        Sign In
-                    </a> */}
+                        Sign Out
+                    </a>
                 </div>
             </div>
         </nav>

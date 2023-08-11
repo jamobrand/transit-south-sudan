@@ -1,4 +1,5 @@
 import React from 'react';
+import BorderImage from "../../../assets/boarder-1.png"
 
 const BorderVerif: React.FC = () => {
     return (
@@ -6,7 +7,7 @@ const BorderVerif: React.FC = () => {
             <div className="mx-auto max-w-7xl px-6 lg:px-8">
                 <div className="mx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-8 sm:gap-y-10 lg:mx-0 lg:max-w-none lg:grid-cols-2 items-center">
                     <img
-                        src="https://images.unsplash.com/photo-1494412574643-ff11b0a5c1c3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80"
+                        src={BorderImage}
                         alt="AI Powered CentyPlus"
                         className="hidden sm:block w-full max-w-none rounded-xl shadow-xl ring-1 ring-gray-400/10"
                     />
