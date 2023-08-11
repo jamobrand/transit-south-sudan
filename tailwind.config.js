@@ -14,7 +14,10 @@ export default {
         travelBlue: "#1864A2",
         travelBlueTwo: "#0A428A",
         travelButton: "#2C7AE4",
-        travelBg: "#E7EEFB"
+        travelBg: "#E7EEFB",
+        applyOn:"#095EAC",
+        speedyTra: "#051963",
+        borderVerif: "#F6DFDE"
       },
 
     },

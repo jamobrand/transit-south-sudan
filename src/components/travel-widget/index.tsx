@@ -121,8 +121,8 @@ const TravelWidget: React.FC = () => {
 
 
     return (
-        <div className="flex justify-center mb-14">
-            <div className="w-full -mt-32 max-w-7xl bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+        <div className="flex justify-center mb-9">
+            <div className="w-full -mt-32 max-w-5xl bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
                 <div className="flex font-semibold justify-center relative border-b border-gray-200 mb-4 space-x-4">
                     <TabButton
                         active={activeTab === 'flight'}
@@ -130,7 +130,7 @@ const TravelWidget: React.FC = () => {
                     >
                         Trip Details
                     </TabButton>
-                    <TabButton
+                    {/* <TabButton
                         active={activeTab === 'hotel'}
                         onClick={() => setActiveTab('hotel')}
                     >
@@ -141,7 +141,7 @@ const TravelWidget: React.FC = () => {
                         onClick={() => setActiveTab('car')}
                     >
                         Manage Permit
-                    </TabButton>
+                    </TabButton> */}
                 </div>
                 {activeTab === 'hotel' &&
                     <div className="px-6">
@@ -325,7 +325,7 @@ const BookingForm: React.FC<{
     setRoundTripDepartureDate: (date: Date | null) => void;
     returnDate: Date | null;
     setReturnDate: (date: Date | null) => void;
-}> = ({ tripType, selectedTripType, setSelectedTripType, oneWayDepartureDate, setOneWayDepartureDate, roundTripDepartureDate, setRoundTripDepartureDate, returnDate, setReturnDate }) => {
+}> = ({ tripType, selectedTripType, oneWayDepartureDate, setOneWayDepartureDate, roundTripDepartureDate, setRoundTripDepartureDate, returnDate, setReturnDate }) => {
 
     const [isLoading, setIsLoading] = useState(false);
 
@@ -369,14 +369,14 @@ const BookingForm: React.FC<{
                     <div className="animate-spin rounded-full h-16 w-16 border-t-4 border-blue-500"></div>
                 </div>
             )}
-            <select
+            {/* <select
                 className="w-1/4 border border-gray-300 rounded-lg p-2"
                 value={selectedTripType}
                 onChange={(e) => setSelectedTripType(e.target.value)}
             >
                 <option value="local">Local</option>
                 <option value="international">International</option>
-            </select>
+            </select> */}
             <select
                 className="w-1/4 border border-gray-300 rounded-lg p-2"
                 defaultValue=""

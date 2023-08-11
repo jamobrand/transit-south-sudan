@@ -2,7 +2,7 @@ import React from 'react';
 
 const NavbarBottom: React.FC = () => {
     return (
-        <nav className="bg-gray-50 dark:bg-gray-700">
+        <nav className="fixed w-full mt-14 bg-gray-50 dark:bg-gray-700">
             <div className="max-w-screen-xl px-4 py-3 mx-auto">
                 <div className="flex items-center">
                     <ul className="flex flex-row font-semibold mt-0 mr-6 space-x-8 text-sm">

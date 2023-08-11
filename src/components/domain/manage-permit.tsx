@@ -22,7 +22,7 @@ const permitDetails = [
             status: 'Active', // Change this to 'Expired' as needed
         },
         permitNumber: "ICTPL-02029X",
-        payment: '$50',
+        payment: '$200',
     },
     {
         id: 2,
@@ -44,7 +44,7 @@ const permitDetails = [
             status: 'Expired', // Change this to 'Expired' as needed
         },
         permitNumber: "ICTPL-02018X",
-        payment: '$50'
+        payment: '$200'
     },
     {
         id: 3,
@@ -66,7 +66,7 @@ const permitDetails = [
             status: 'Expired', // Change this to 'Expired' as needed
         },
         permitNumber: 'ICTPL-01039Y',
-        payment: '$50',
+        payment: '$200',
     },
     {
         id: 4,
@@ -88,7 +88,7 @@ const permitDetails = [
             status: 'Expired', // Change this to 'Expired' as needed
         },
         permitNumber: 'ICTPL-01029Y',
-        payment: '$50',
+        payment: '$200',
     },
     // Add more permit details...
 ];

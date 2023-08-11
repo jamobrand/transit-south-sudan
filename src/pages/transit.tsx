@@ -7,6 +7,7 @@ import ValidatePermit from "../components/domain/validate-permit"
 import Footer from "../components/molecules/footer"
 import ManagePermit from "../components/domain/manage-permit"
 import PermitComplete from "../components/domain/permit-complete"
+import ViewPermit from "../components/domain/view-permit"
 
 const IndexPage = () => {
     return (
@@ -20,6 +21,7 @@ const IndexPage = () => {
                     <Route path="validate-permit" element={<ValidatePermit />} />
                     <Route path="manage-permit" element={<ManagePermit />} />
                     <Route path="permit-complete" element={<PermitComplete />} />
+                    <Route path="permit-complete/view-permit" element={<ViewPermit />} />
                 </Routes>
 
             </div>

@@ -26,7 +26,7 @@ const ValidatePermit: React.FC = () => {
                 status: 'Active', // Change this to 'Expired' as needed
             },
             permitNumber: permitNumber,
-            payment: '$50',
+            payment: '$200',
         },
     ];
 
