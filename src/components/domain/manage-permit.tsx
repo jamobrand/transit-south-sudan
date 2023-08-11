@@ -97,7 +97,7 @@ const ManagePermit: React.FC = () => {
 
     return (
         <div className="flex min-h-full flex-1 flex-col justify-center px-6 py-7 lg:px-8">
-            <div className="mt-10 sm:mx-auto sm:w-full sm:max-w-8xl">
+            <div className="mt-10 pt-20 sm:mx-auto sm:w-full sm:max-w-8xl">
                 <div className="relative overflow-x-auto mb-6 shadow-md sm:rounded-lg">
                     {/* ... Your table header and search inputs ... */}
                     <table className="w-full text-sm text-left text-gray-500 dark:text-gray-400">

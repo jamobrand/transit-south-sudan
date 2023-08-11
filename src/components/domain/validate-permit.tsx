@@ -42,7 +42,7 @@ const ValidatePermit: React.FC = () => {
     return (
         <div className="flex min-h-full flex-1 flex-col justify-center px-6 py-7 lg:px-8">
             <div className="mt-10 sm:mx-auto sm:w-full sm:max-w-6xl">
-                <div className="mt-4 mb-5 flex justify-center space-x-4">
+                <div className="mt-4 pt-16 mb-5 flex justify-center space-x-4">
 
                     <input
                         type="text"

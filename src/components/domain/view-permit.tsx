@@ -34,7 +34,7 @@ const ViewPermit: React.FC = () => {
     return (
         <div className="bg-white p-8 shadow-lg rounded-lg border">
 
-            <div className="flex justify-center items-center mb-6">
+            <div className="flex justify-center items-center pt-20 mb-6">
                 <img
                     src="https://evisa.gov.ss/themes/ss-evisa/assets/img/DCRNPI.png"
                     alt="South Sudan Logo" className="h-24 w-24" />

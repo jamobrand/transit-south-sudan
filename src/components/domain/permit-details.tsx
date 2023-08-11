@@ -10,7 +10,7 @@ const PermitDetails: React.FC = () => {
     };
     return (
         <div className="flex min-h-full flex-1 flex-col justify-center px-6 py-7 lg:px-8">
-            <div className="mt-10 sm:mx-auto sm:w-full sm:max-w-sm">
+            <div className="mt-10 pt-20 sm:mx-auto sm:w-full sm:max-w-sm">
                 <form className="space-y-6">
                 <div className="sm:col-span-full">
                         <label htmlFor="country" className="block text-sm font-medium leading-6 text-gray-900">
@@ -106,11 +106,12 @@ const PermitDetails: React.FC = () => {
                                 className="block w-full rounded-md border-gray-300 py-2 px-3 text-gray-900 focus:ring-indigo-500 focus:border-indigo-500 focus:ring focus:ring-opacity-50 sm:text-sm"
                             >
                                 <option>Select a vehicle type</option>
-                                <option>Tripper</option>
+                                <option>Tipper</option>
                                 <option>Canter</option>
                                 <option>Tanker</option>
                                 <option>Pickup</option>
                                 <option>Motorbike</option>
+                                <option>Bus</option>
                             </select>
                         </div>
                       
