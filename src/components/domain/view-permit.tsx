@@ -53,11 +53,11 @@ const ViewPermit: React.FC = () => {
                     </tr>
                     <tr>
                         <td className="pl-36 pr-5 py-1 font-semibold">Origin:</td>
-                        <td>Mombasa</td>
+                        <td>Juba</td>
                     </tr>
                     <tr>
                         <td className="pl-36 pr-5 py-1 font-semibold">Destination:</td>
-                        <td>Juba</td>
+                        <td>Malakal</td>
                     </tr>
                     <tr>
                         <td className="pl-36 pr-5 py-1 font-semibold">Issued to:</td>
