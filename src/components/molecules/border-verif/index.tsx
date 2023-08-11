@@ -32,7 +32,7 @@ const BorderVerif: React.FC = () => {
                 </div>
                 <div className="sm:hidden mt-6">
                     <img
-                        src="https://centyplus.africa/assets/1-686b9416.png"
+                        src={BorderImage}
                         alt="Product screenshot"
                         className="w-full max-w-none rounded-xl shadow-xl ring-1 ring-gray-400/10"
                     />

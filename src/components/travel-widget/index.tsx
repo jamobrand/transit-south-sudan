@@ -379,7 +379,7 @@ const BookingForm: React.FC<{
                 <option value="international">International</option>
             </select> */}
             <select
-                className="w-1/4 border border-gray-300 rounded-lg p-2"
+                className="sm:w-1/4 w-full border border-gray-300 rounded-lg p-2"
                 defaultValue=""
             >
                 <option value="" disabled>
@@ -392,7 +392,7 @@ const BookingForm: React.FC<{
                 ))}
             </select>
             <select
-                className="w-1/4 border border-gray-300 rounded-lg p-2"
+                className="sm:w-1/4 w-full border border-gray-300 rounded-lg p-2"
                 defaultValue=""
             >
                 <option value="" disabled>
@@ -406,7 +406,7 @@ const BookingForm: React.FC<{
             </select>
             <input
                 type="date"
-                className={`w-1/6 border border-gray-300 rounded-lg p-2`}
+                className={`sm:w-1/6 w-full border border-gray-300 rounded-lg p-2`}
                 value={tripType === 'one-way' && oneWayDepartureDate ? oneWayDepartureDate.toISOString().slice(0, 10) : tripType === 'round-trip' && roundTripDepartureDate ? roundTripDepartureDate.toISOString().slice(0, 10) : ''}
                 min={today.toISOString().slice(0, 10)}
                 onChange={(e) => {
@@ -421,7 +421,7 @@ const BookingForm: React.FC<{
             {tripType === 'round-trip' && (
                 <input
                     type="date"
-                    className={`w-1/6 border border-gray-300 rounded-lg p-2`}
+                    className={`sm:w-1/6 w-full border border-gray-300 rounded-lg p-2`}
                     value={returnDate ? returnDate.toISOString().slice(0, 10) : ''}
                     min={tripType === 'round-trip' && roundTripDepartureDate ? roundTripDepartureDate.toISOString().slice(0, 10) : today.toISOString().slice(0, 10)}
                     onChange={(e) => setReturnDate(new Date(e.target.value))}
